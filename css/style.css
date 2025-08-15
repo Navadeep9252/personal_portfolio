@@ -142,7 +142,10 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
-  font-weight: 700;
+  width: 350px;
+  height: 70px;
+  font-weight: 600;
+  justify-content: center;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
@@ -187,7 +190,7 @@ textarea {
   color: #fff;
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
-  height: 100vh;
+  height: 180vh;
   min-height: 80rem;
   max-height: 120rem;
   position: relative; }
@@ -457,7 +460,7 @@ textarea {
 .project-details__desc {
   margin: 0 0 7rem 0; }
   .project-details__desc-para {
-    font-size: 1.8rem;
+    font-size: 1.70rem;
     line-height: 1.7;
     color: grey;
     margin-bottom: 2rem; }
@@ -702,3 +705,22 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+<style>
+  .contact-card {
+    max-width: 720px; margin: 1.5rem auto; padding: 1.25rem 1.5rem;
+    border: 1px solid #e5e7eb; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,.06);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  .contact-card h2 { margin: 0 0 0.75rem; font-size: 1.25rem; }
+  .contact-card .grid {
+    display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  .contact-card .item {
+    display: flex; align-items: center; gap: .6rem;
+    padding: .65rem .75rem; border-radius: 12px; text-decoration: none; color: inherit;
+    border: 1px solid #f0f2f5;
+  }
+  .contact-card .item:hover { background: #f9fafb; border-color: #e5e7eb; }
+  .contact-card .item span:first-child { width: 1.25rem; text-align: center; }
+</style>
